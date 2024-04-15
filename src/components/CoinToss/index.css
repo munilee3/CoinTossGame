@@ -1,0 +1,78 @@
+.app-container {
+  background-image: linear-gradient(to right, #f9d423, #e2a139);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.game-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 700px;
+}
+.game-title {
+  font-family: 'roboto';
+  color: #a35200;
+  font-size: 28px;
+}
+.game-description {
+  font-size: 15px;
+  font-family: 'roboto';
+  font-weight: 500;
+  color: #334155;
+  margin-top: 0;
+}
+.coin-image {
+  height: 150px;
+  width: 150px;
+}
+.toss-coin-btn {
+  background-color: #f9d423;
+  border: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 18px;
+  padding-right: 18px;
+  color: #a35200;
+  border-radius: 10px;
+  font-weight: 500;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.game-results-container {
+  display: flex;
+  flex-direction: column;
+}
+.toss-results {
+  color: #475569;
+  font-weight: 500;
+  font-family: 'roboto';
+}
+@media screen and (min-width: 768px) {
+  .game-container {
+    max-width: 500px;
+  }
+  .game-title {
+    font-size: 35px;
+  }
+  .game-description {
+    font-size: 20px;
+  }
+  .coin-image {
+    height: 300px;
+    width: 300px;
+  }
+  .game-results-container {
+    flex-direction: row;
+    width: 70%;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+}
